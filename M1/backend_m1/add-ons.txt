@@ -1,0 +1,7 @@
+djangorestframework
+pillow
+djangorestframework-simplejwt
+pytest
+Channels
+psycopg2-binary  
+
