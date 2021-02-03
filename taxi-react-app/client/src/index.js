@@ -1,13 +1,13 @@
-// client/src/index.js
+
+import 'bootswatch/dist/lux/bootstrap.css'; // new
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom'; // new
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// changed
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
