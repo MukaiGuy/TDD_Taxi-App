@@ -131,6 +131,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+# User Media
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 # Channels Config
 REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379')
 
