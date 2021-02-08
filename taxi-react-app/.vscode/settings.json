@@ -2,5 +2,6 @@
     "cSpell.words": [
         "simplejwt"
     ],
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "standard.enable": false
 }

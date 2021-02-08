@@ -1,0 +1,13 @@
+# server/.dockerignore
+
+__pycache__/
+*.pyc
+db.sqlite3
+.venv
+.venvrc
+env
+venv
+.pytest_cache/
+.DS_Store
+.dockerignore
+.vscode

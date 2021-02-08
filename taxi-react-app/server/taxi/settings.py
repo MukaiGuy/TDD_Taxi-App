@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',  # added
     'django.contrib.staticfiles',
     # 3rd Party
+    'corsheaders',
     'rest_framework',  # Django REST Framework(DRF)
     # Channels requires an ASGI_APPLICATION setting and a routing.py file.
     'channels',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -165,3 +167,7 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=1),
     'USER_ID_CLAIM': 'id',
 }
+
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3001",
+]
